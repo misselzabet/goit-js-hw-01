@@ -1,13 +1,8 @@
+function makeTransaction(quantity, pricePerDroid) {
+  const totalPrice = quantity * pricePerDroid;
+  return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
+}
 
-
-function makeTransactilon (quantity, pricePerDroid)
-{
-    makeTransactilon = `You ordered ${quantity} droids worth ${quantity * pricePerDroid} credits!`;
-  console.log(makeTransactilon);
- }
- makeTransactilon(5, 3000);
-
-
-
-
-
+console.log(makeTransaction(5, 3000));
+console.log(makeTransaction(3, 1000));
+console.log(makeTransaction(10, 500));
